@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button android:text="@string/btn_take_picture"
+            android:id="@+id/btn_take_pic"
+            android:onClick="takeImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Button>
+        <Button android:text="@string/btn_pick_img"
+            android:id="@+id/button1"
+            android:onClick="pickImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Button>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/thbnail"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ImageView>
+</LinearLayout>

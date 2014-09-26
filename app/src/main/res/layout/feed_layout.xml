@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/feed_bg">
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Post Your Problem"
+        android:id="@+id/btn_hp_post_problem"
+        android:layout_alignParentBottom="true"/>
+    <ListView
+       android:id="@+id/list"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:divider="@null"
+       android:layout_above="@id/btn_hp_post_problem"
+       android:layout_alignParentTop="true"/>
+
+
+</RelativeLayout>
